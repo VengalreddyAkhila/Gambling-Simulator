@@ -10,6 +10,7 @@ namespace Gambling_Simulator
             Console.WriteLine("welcome to Gambling_Simulator_Game");
             Gambler gambler = new Gambler();
             gambler.gamblerstake();
+            gambler.Win_Loss();
         }
     }
 }
