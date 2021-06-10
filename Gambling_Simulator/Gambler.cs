@@ -30,19 +30,17 @@ namespace Gambling_Simulator
             int lossingAmount = (STAKE / 2);
             int stakeholder = STAKE;
             int win = 1;
-            while(stakeholder < winningAmount && stakeholder > lossingAmount)
+            while( stakeholder <= winningAmount &&  stakeholder > lossingAmount)
             {
                 Random random = new Random();
                 int check = random.Next(0, 2);
                 if (check == win)
                 {
-                    stakeholder = stakeholder + BET;
-                   // Console.WriteLine("stakeholder wins the bet" +stakeholder);
+                    stakeholder = stakeholder + BET;                   
                 }
                 else
                 {
-                    stakeholder = stakeholder - BET;
-                    Console.WriteLine("stakeholder resigns the bet" +stakeholder);
+                    stakeholder = stakeholder - BET;                    
                 }
 
             }
