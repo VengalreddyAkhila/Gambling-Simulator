@@ -7,19 +7,20 @@ namespace Gambling_Simulator
     class Gambler
     {
        
-        int bet = 1;
-        int stake = 100;
+         const int bet = 1;
+         const int stake = 100;
         public void gamblerstake()
         {
+            Console.WriteLine("stake" + stake + "bet" + bet);
+            Random random = new Random();
+            int stakeholder = random.Next(0, 2);
 
             for (int i = 0; i <= stake; i++)
             {
-                if (bet == 1)
-                    Console.WriteLine("win");
+                if (stakeholder  == 1)
+                    Console.WriteLine("wins");
                 else
                     Console.WriteLine("loss");
-
-
             }
         }
 
